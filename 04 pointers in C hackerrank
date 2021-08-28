@@ -4,16 +4,11 @@ void update(int *a,int *b) {
     // Complete this function  
     int add,sub;
     add= *a+*b;
-    if(a>b)
-    {
-        sub=*a-*b;
-    }  
-    else 
-    {
-        sub=*b-*a;
-    }
+    
+    sub=*a-*b;
+   
     *a=add;
-    *b=sub;
+    *b=abs(sub);
 }
 
 int main() 
